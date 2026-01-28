@@ -1,0 +1,120 @@
+.about {
+  font-family: Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+/* HEADER */
+.header {
+  background: var(--brand-cream-dark);
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.header h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 10px;
+}
+
+.header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* VISION */
+.vision {
+  background: #fff;
+  margin: 60px auto;
+  padding: 50px 8%;
+  max-width: 900px;
+}
+
+.vision h2 {
+  margin-bottom: 16px;
+  color: var(--brand-clay);
+}
+
+.vision p {
+  margin-bottom: 14px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* WHY */
+.why {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.why h2 {
+  margin-bottom: 16px;
+  color: var(--brand-clay);
+}
+
+.why p {
+  max-width: 800px;
+  margin: 0 auto 12px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* OBJECTIVES */
+.objectives {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.objectives h2 {
+  margin-bottom: 40px;
+  color: var(--brand-clay);
+}
+
+.objectiveGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.objectiveItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+}
+
+.objectiveItem span {
+  width: 18px;
+  height: 18px;
+  background: var(--brand-olive);
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.objectiveItem p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .header {
+    padding: 60px 8%;
+  }
+
+  .why,
+  .objectives {
+    padding: 50px 8%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 40px 6%;
+  }
+
+  .vision {
+    padding: 40px 6%;
+    margin: 40px 6%;
+  }
+}
