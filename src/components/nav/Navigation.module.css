@@ -1,0 +1,92 @@
+.navbar {
+  background: rgba(217, 217, 217, 0.7) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+.logo {
+  font-weight: 600;
+  color: #111;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+
+.langButton {
+  border-radius: 999px;
+  padding: 4px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.langMenu {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-radius: 12px;
+}
+
+/* Drawer */
+.drawer {
+  width: 260px;
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.drawerLang {
+  padding: 1rem;
+}
+
+
+/* Spacer for fixed navbar */
+.toolbarSpacer {
+  height: 64px; /* desktop AppBar height */
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .toolbarSpacer {
+    height: 56px; /* mobile AppBar height */
+  }
+}
+.linkWrapper {
+  text-decoration: none;
+}
+
+.link {
+  text-transform: none !important;
+  color: #222 !important;
+}
+
+.activeLink .link {
+  font-weight: 600;
+  color: #000 !important;
+  position: relative;
+}
+
+.activeLink .link::after {
+  content: "";
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  bottom: 4px;
+  height: 2px;
+  background: #111;
+  border-radius: 2px;
+}
+.link:hover {
+  color: #000 !important;
+}
+.activeLink .link::after {
+  transition: all 0.2s ease;
+}
