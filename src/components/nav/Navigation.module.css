@@ -1,8 +1,8 @@
 .navbar {
-  background: rgba(217, 217, 217, 0.7) !important;
+  background: rgba(255, 255, 255, 0.65) !important;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 
@@ -89,4 +89,15 @@
 }
 .activeLink .link::after {
   transition: all 0.2s ease;
+}
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoImg {
+  height: 36px;          
+  width: auto;
+  object-fit: contain;
 }

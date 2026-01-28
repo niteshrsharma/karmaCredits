@@ -25,6 +25,8 @@ import { useT } from "../../langSupport/useT"
 import { useLang } from "../../langSupport/LangProvider"
 import { NavLink } from "react-router-dom"
 
+import logo from '../../assets/logo.svg';
+
 const MotionAppBar = motion(AppBar)
 
 const navItems = [
@@ -62,7 +64,11 @@ export default function Navigation() {
       >
         <Toolbar className={styles.toolbar}>
           <Typography variant="h6" className={styles.logo}>
-            {t("brand.karmaCredits")}
+            <img
+              src={logo}
+              alt={t("brand.karmaCredits")}
+              className={styles.logoImg}
+            />
           </Typography>
 
           {/* Desktop */}
