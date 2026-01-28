@@ -10,6 +10,8 @@ import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
 import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
 import Diversity3OutlinedIcon from "@mui/icons-material/Diversity3Outlined";
 
+import { useNavigate } from "react-router-dom";
+
 const flowVariant = {
   hidden: { opacity: 0, y: 30 },
   visible: (i) => ({
@@ -20,6 +22,7 @@ const flowVariant = {
 };
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className={styles.home}>
 
@@ -69,6 +72,7 @@ export default function Home() {
             className={styles.cta}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => navigate('/contact')}
           >
             Connect with us
           </motion.button>
@@ -144,6 +148,7 @@ export default function Home() {
         </div>
       </section>
 
+      <h1 className={styles.tag}>Wherever young people learn, grow, and do good- Karma Credits belongs</h1>
     </div>
   );
 }
