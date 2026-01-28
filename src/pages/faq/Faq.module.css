@@ -1,0 +1,91 @@
+.faq {
+  font-family: Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+/* HEADER */
+.header {
+  background: var(--brand-cream-dark);
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.header h1 {
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  margin-bottom: 12px;
+}
+
+.header p {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* FAQ LIST */
+.list {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 6%;
+}
+
+.item {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* QUESTION */
+.question {
+  width: 100%;
+  background: #fff;
+  border: none;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+.question:hover {
+  background: var(--brand-cream);
+}
+
+.question span {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* ANSWER */
+.answer {
+  padding: 14px 18px;
+  background: #fafafa;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header {
+    padding: 60px 8%;
+  }
+
+  .list {
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 40px 6%;
+  }
+}
